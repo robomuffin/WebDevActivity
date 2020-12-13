@@ -404,3 +404,140 @@ border-radius: 50px;
 	color: white;
 	margin-bottom: 3px;
 }
+
+/*-------Contact CSS ---------*/
+
+.contact-box{
+	background: #333333;
+	position: relative;
+	width: 100%;
+	top: 250px;
+}
+.contact-title{
+	
+	left: 200px;
+	width: 1000px;
+	position: relative;
+	top: 250px;
+	background: #ffdb58;
+	height: 500px;
+}
+
+.contact-title h1{
+	font-family: Countryside;
+	margin-bottom: 3px;
+}
+
+form{
+	margin-top: 75px;
+}
+
+.form-control{
+	width: 600px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+
+input{
+	height: 45px;
+}
+
+form .submit{
+	background: #fff;
+	border-color: transparent;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 50px;
+	margin-top: 20px;
+}
+
+/*-------Gallery2 CSS ---------*/
+
+
+
+
+.gallery-box{
+	background: #333333;
+	position: relative;
+	width: 100%;
+	top: 250px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gallery-section{
+  width: 100%;
+  padding: 60px 0;
+  background: #ffdb58;
+}
+
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.gallery-section h1{
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.border{
+  width: 180px;
+  height: 4px;
+  background: #333;
+  margin: 60px auto;
+}
+
+.gallery-section .gallery{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+.gallery-section .image{
+  flex: 25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-section .image img{
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+
+.gallery-section .image:hover img{
+  transform: scale(1.4) rotate(15deg);
+}
+
+@media screen and (max-width:960px) {
+  .gallery-section .image{
+    flex: 33.33%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .gallery-section .image{
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .gallery-section .image{
+    flex: 100%;
+  }
+}
